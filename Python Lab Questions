@@ -1,0 +1,36 @@
+Introduction to Programming using Python - Lab
+
+1.1 Swap of two numbers
+1.2 Find the largest of three numbers
+1.3 Given the principal amount, rate of interest, and number of years, calculate both simple interest and compound interest.
+
+2.1 Find the GCD and LCM of two numbers
+2.2 Computes the roots of a quadratic function.
+2.3 Write a program to find the factorial of the given number (n! = n*n-1*n-2* … * 2* 1)
+
+3.1 Print the “Hello World” n times, where n is any user defined number.
+3.2 Print the Pascal triangle of row n, where n is any user defined number.
+3.3 Write a program for Bubble sort.
+
+4.1 Write a function to calculate n! recursively.
+4.2 Calculate the value of nCr and nPr for a given n and r.
+4.3 Given a number, check whether it is prime.
+
+5.1 Add and multiply two matrices.
+5.2 Using list, store all the user input names and display in the same ordered as entered.
+5.3 Store the content of a list (with duplicate entries) in a set and display the set content.
+5.4 Store the student information in a (RollNo, Name) pare in a dictionary and retrieve any name with a given RollNo.
+6.1 Using NumPy library perform the matrix operations like addition, multiplication, inverse.
+6.2 Solve a set of linear equations (Example, 2x + y = 8 and 3x + 4y = 18).
+6.3 Read the content of a .csv file using pandas.
+6.4 Read the content of a .csv file (that contains an arbitrary English text) using pandas. Find the frequencies of individual tokens
+and store them in another .csv file.
+
+Books
+Python Programming: Using Problem Solving Approach by Reema Thareja
+Python Programming: An Introduction to Computer Science by John Zelle
+Introduction to Python Programming by Gowrishankar S and Veena A
+
+Online Materials:
+https://www.kaggle.com/learn/python
+https://docs.python.org/3/tutorial/index.html
