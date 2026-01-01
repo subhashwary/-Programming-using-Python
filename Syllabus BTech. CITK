@@ -1,0 +1,32 @@
+Module 1: Introduction
+Basic components of computer, Execution mechanism of program in computer, Concept of Compiler, Interpreter. Brief of
+Machine Language, Assembly Language, and High Level language.
+
+Module 2: Basic Concepts in Programming Paradigms
+Problem analysis, Principles and styles of problem-solving, Algorithm, Flow chart, Pseudo code, Syntax, Introduction to Python.
+
+Module 3: Data types and control structures
+Data types, variables, expressions, and statements, Operators (unary, arithmetic, etc.), Conditional statement, Assignment
+statements, Strings and string operations, Control Structures: loops and decision
+
+Module 4: Function
+Defining functions, Functions and arguments (signature), Recursion, Modularization.
+
+Module 5: Array, List, Dictionary
+Array, 2D array, Matrix operation, List and Dictionary and their advantages and utility, Tuple and Set.
+
+Module 6: Object oriented concept
+Basic concept of object oriented, Class and Object, Difference with structural programming, Object oriented design.
+
+Module 7: Python libraries
+NumPy, Basics of NumPy, Various operations on NumPy, Pandas, Basics of Pandas, Reading file using Pandas, DataFrames
+creation using Pandas. 
+
+Books
+Introduction to Computation and Programming using Python, by John Guttag,
+Python Programming: Using Problem Solving Approach by Reema Thareja
+Python Programming: An Introduction to Computer Science by John Zelle
+Introduction to Python Programming by Gowrishankar S and Veena A
+Online Materials:
+https://www.kaggle.com/learn/python
+https://docs.python.org/3/tutorial/index.html
