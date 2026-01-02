@@ -26,3 +26,77 @@ Execution & Performance
 i) Speed: Python is slower than compiled languages like C due to its interpreted nature. Performance can be improved using Cython, Nuitka, or by writing critical sections as C extensions.
 ii) The Global Interpreter Lock (GIL): This is a mutex that protects access to Python objects, preventing multiple threads from executing Python bytecodes at once. This simplifies memory management but can limit multi-core performance in CPU-bound tasks.
 iii) Creating Executables: Tools like PyInstaller, cx_Freeze, and Nuitka can package scripts into standalone binaries for distribution.
+
+Core Technical Concepts
+1. Interpreted vs. Compiled: Python is primarily an interpreted language, meaning code is executed line-by-line. However, it does a preliminary compilation of source code (.py) into bytecode (.pyc) before execution.
+2. Dynamic Typing: You do not need to declare variable types (like int or string); Python determines the type at runtime based on the assigned value.
+3. Memory Management: Python uses automatic memory management through reference counting and a garbage collector to handle circular references.
+4. Indentation: Unlike most languages, Python uses indentation (whitespace) to define code blocks instead of curly braces. 
+
+Data Structures & Types
+Python provides several built-in data types: 
+1. Numeric: int, float, complex.
+2. Lists vs. Tuples: Lists are mutable (changeable) and defined with [], while Tuples are immutable (fixed) and defined with ().
+3. Dictionaries: Collections of unique key-value pairs used for fast data retrieval.
+4. Sets: Unordered collections of unique elements.
+
+Common Troubleshooting & Syntax
+1. *args vs. **kwargs: *args allows a function to accept any number of positional arguments as a tuple; **kwargs accepts any number of keyword arguments as a dictionary.
+2. is vs. ==: == checks if values are equal, while is checks if two variables point to the same object in memory.
+3. Global Interpreter Lock (GIL): A mutex that allows only one thread to execute Python bytecode at a time, which can limit performance in CPU-bound multithreaded tasks. 
+
+Helpful Resources
+1. Official Python Documentation
+2. Python Package Index (PyPI) (for third-party libraries)
+3. Python Beginner's Guide
+
+Latest Features in Python 3.14 (Released Late 2025)
+1. What is the "Free-Threaded" mode? Officially supported in 2026, this mode allows Python to run without the Global Interpreter Lock (GIL), enabling true parallel execution on multi-core processors.
+2. What are Template String Literals (t-strings)? Introduced in Python 3.14, t-strings allow for deferred evaluation of strings, making them highly useful for safe SQL query building and complex web templating.
+3. How has the REPL changed? The interactive shell now includes real-time syntax highlighting and smarter autocompletion for import statements.
+4. What is the "Tail-Call-Compiled" interpreter? An internal optimization in 3.14 that improves the performance of recursive function calls by roughly 3–5%.
+5. How does Incremental Garbage Collection work? This new mechanism breaks the garbage collection process into smaller chunks, significantly reducing "pause" times in large-scale applications. 
+
+Advanced Programming Concepts
+1. __new__ vs __init__: __new__ is the actual constructor that creates the object instance in memory, while __init__ is the initializer that sets up the object's attributes.
+2. Monkey Patching: This refers to the practice of dynamically modifying or extending code (classes or modules) at runtime, often used for temporary fixes or testing.
+3. Method Resolution Order (MRO): Python uses the C3 Linearization algorithm to determine the order in which base classes are searched during multiple inheritance.
+4. Descriptors: These are objects that define how attributes are accessed, using methods like __get__, __set__, and __delete__. They power features like @property and @classmethod. 
+
+Performance & Concurrency
+1. Subinterpreters: New in the standard library (via the concurrent.interpreters module), these allow multiple isolated Python interpreters to run within a single process, offering a middle ground between threads and multiprocessing.
+2. Asyncio Introspection: A new CLI tool (python -m asyncio ps <PID>) allows you to inspect running asynchronous tasks and coroutine stacks in real-time without modifying the code.
+3. Safe External Debugger: Python 3.14 introduced a zero-overhead interface that allows debuggers to attach to a running process via its PID without needing to restart the application. 
+
+Ecosystem & Career (2026 Outlook)
+1. Market Dominance: As of 2026, Python remains the top-ranked language on the TIOBE Index with a record-high market share, largely driven by the explosive growth in AI and Machine Learning.
+2. Key Libraries:
+2.1. AI/ML: TensorFlow, PyTorch, Scikit-learn.
+2.2. Data Science: Pandas, NumPy.
+2.3. Web Development: FastAPI, Django, Flask.
+3. Job Market: Python developers are in high demand for roles in AI Engineering, Backend Development, and Data Science, with over 64,000 open positions in the US alone as of 2025-2026. 
+
+Python Versions & Release Schedule
+1. What is the latest stable version of Python? Python 3.14, released in October 2025, is the current stable version.
+2. When is Python 3.15 coming out? It is expected to be officially released on October 7, 2026.
+3. What is "Python 2026"? A new Calendar Versioning (CalVer) scheme was proposed (PEP 2026). Under this plan, Python 3.14 would be the last traditional version; the next major release in 2026 would be named Python 3.26.
+4. Which versions are retiring? Python 3.9 officially reached its end of life (EOL) in October 2025. 
+
+Python 3.14 Key Features
+1. What are Template Strings (t-strings)? Introduced in PEP 750, t-strings (prefixed with t"") return a Template object instead of a raw string. This allows for safer, custom processing of interpolated data, such as auto-sanitizing SQL queries.
+2. How does "Free-Threaded" Python work? This is an officially supported build variant that removes the Global Interpreter Lock (GIL). It allows Python to execute code across multiple CPU cores simultaneously, drastically improving performance for CPU-bound tasks.
+3. What is the new JIT compiler? Python 3.14 installers now include an experimental Just-In-Time (JIT) compiler that can be enabled to speed up code execution.
+4. Are error messages different? Yes, the interpreter now suggests fixes for typos. For example, if you type improt, it will ask, "Did you mean 'import'?". 
+
+Modern Packaging & Tooling (2026)
+1. What is the best package manager now? While pip and Poetry remain popular, uv (written in Rust) has become a primary choice for 2026 due to its extreme speed—often 10x to 100x faster than pip.
+2. What is PEP 723 (Inline Script Metadata)? This standard allows you to declare dependencies directly inside a single-file script using comments. Tools like uv or Hatch can then automatically install those dependencies when you run the script, eliminating the need for a separate requirements.txt for small tools.
+3. Which tool should I use for environments?
+3.1. uv: Best for speed, CI/CD, and all-in-one management (Python versions + packages).
+3.2. Poetry: Best for complex library development and strict dependency resolution.
+3.3. pip: Still the standard for simple, universal compatibility. 
+
+Advanced Internals
+1. Deferred Annotation Evaluation (PEP 649): Type hints are now evaluated lazily (at runtime only when needed). This speeds up startup times and resolves many circular import issues.
+2. Incremental Garbage Collection: The new garbage collector reduces "stop-the-world" pause times for applications with large memory heaps by breaking collection into smaller steps.
+3. Safe Remote Debugging: Python 3.14 introduced a zero-overhead interface that allows debuggers to safely attach to a running process using its PID without restarting the app. 
