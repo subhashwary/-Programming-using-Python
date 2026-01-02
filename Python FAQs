@@ -1,0 +1,28 @@
+Python is a high-level, interpreted, general-purpose programming language known for its clear syntax and readability. Below are the most common general FAQs for Python in 2026. 
+
+Core Language & Features
+i) What is Python? It is an interpreted, interactive, object-oriented language that supports multiple paradigms, including procedural and functional programming.
+ii) Why is it called Python? It was named by creator Guido van Rossum after the BBC comedy series "Monty Python's Flying Circus".
+iii) Is it interpreted or compiled? CPython, the most common implementation, does both: it compiles source code (.py) into bytecode (.pyc) which is then interpreted by the Python Virtual Machine (PVM).
+iv) What is PEP 8? It is the official "Python Enhancement Proposal" that provides style guidelines for writing clean and readable Python code.
+v) Why is indentation required? Python uses indentation to define code blocks (instead of curly braces or keywords like begin/end), which enforces a consistent and readable coding style. 
+
+Data Types & Memory
+i) Mutable vs. Immutable:
+i.i) Mutable: Objects like lists, dictionaries, and sets can be changed after creation.
+i.ii) Immutable: Objects like strings, tuples, and integers cannot be changed once created.
+ii) Memory Management: Python manages memory automatically via reference counting and a cyclic garbage collector that periodically reclaims memory from unreachable objects.
+iii) Variables: Python is dynamically typed, meaning you do not need to declare a variable's data type; it is determined at runtime based on the assigned value. 
+
+Development & Tools
+i) Getting Python: You can download the latest official version (currently in the 3.x series, such as 3.14.2) for Windows, macOS, and Linux from Python.org.
+ii) Package Management: The standard tool for installing third-party libraries is pip, which downloads packages from the Python Package Index (PyPI).
+iii) Popular Frameworks:
+iii.i) Web Development: Django and Flask.
+iii.ii) Data Science/AI: NumPy, Pandas, TensorFlow, and PyTorch.
+iv) Debugging: The built-in pdb module is the standard console debugger, though most IDEs like PyCharm and VS Code provide advanced graphical debuggers. 
+
+Execution & Performance
+i) Speed: Python is slower than compiled languages like C due to its interpreted nature. Performance can be improved using Cython, Nuitka, or by writing critical sections as C extensions.
+ii) The Global Interpreter Lock (GIL): This is a mutex that protects access to Python objects, preventing multiple threads from executing Python bytecodes at once. This simplifies memory management but can limit multi-core performance in CPU-bound tasks.
+iii) Creating Executables: Tools like PyInstaller, cx_Freeze, and Nuitka can package scripts into standalone binaries for distribution.
