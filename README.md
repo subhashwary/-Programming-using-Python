@@ -1,2 +1,2 @@
-# -Programming-using-Python
+# Programming-using-Python
 Python codes for practice
