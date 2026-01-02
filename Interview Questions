@@ -1,0 +1,32 @@
+Interview Questions
+
+1. Foundational Questions (For Freshers)
+i) What is the difference between a list and a tuple? Lists are mutable (can be changed) and defined with [], while tuples are immutable (read-only) and defined with ().
+ii) What is PEP 8? It is the official Python Style Guide that provides guidelines for writing clean, readable, and consistent code.
+iii) What is a lambda function? An anonymous, one-line function defined with the lambda keyword, often used for short, throwaway operations.
+iv) How is memory managed in Python? Python uses a private heap space for objects and an internal garbage collector that automatically reclaims unused memory.
+v) What does __init__ do? It is a constructor method that is automatically called to initialize an object's attributes when a new instance of a class is created. 
+
+2. Technical & Intermediate Concepts
+i) Decorators: Functions that modify or enhance the behavior of another function without changing its source code.
+ii) Generators: Functions that use the yield keyword to return an iterable object lazily, one item at a time, which is more memory-efficient than returning a full list.
+iii) args and **kwargs: Special syntax used in function definitions to pass a variable number of positional (*args) or keyword (**kwargs) arguments.
+iv) Shallow vs. Deep Copy: A shallow copy creates a new object but references the same nested objects; a deep copy recursively duplicates all nested objects, making them entirely independent.
+v) Global Interpreter Lock (GIL): A mutex that allows only one thread to execute Python bytecode at a time, protecting memory but limiting true parallelism in CPU-bound tasks. 
+
+3. Advanced & Professional Roles
+i) Multithreading vs. Multiprocessing: Multithreading is ideal for I/O-bound tasks, while multiprocessing is better for CPU-bound tasks as it bypasses the GIL by using separate memory spaces.
+ii) Context Managers (with statement): Used for efficient resource management (like opening files), ensuring that resources are properly closed or released after use.
+iii) Abstract Base Classes (ABCs): Mechanisms to define a blueprint for other classes, ensuring that subclasses implement specific methods.
+iv) Meta-programming: The ability of a program to treat other programs as data, often achieved in Python using metaclasses. 
+
+4. Practical Coding Tasks
+Common coding challenges often include:
+i) Reversing a string: Often solved using slicing: string[::-1].
+ii) Palindrome Check: Verifying if a string reads the same forward and backward.
+iii) Fibonacci Series: Writing a function to generate numbers in the Fibonacci sequence.
+iv) Removing Duplicates: Converting a list to a set to remove duplicates and back to a list. 
+
+5. Libraries & Frameworks (Role-Specific)
+i) Data Science: Expect questions on NumPy (array operations, broadcasting) and Pandas (DataFrames, handling missing values).
+ii) Web Development: Be prepared to discuss Django (MVT architecture, ORM) or Flask (routing, lightweight structure).
