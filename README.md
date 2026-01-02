@@ -31,7 +31,7 @@ print(fibonacci(7)) # Output: [0, 1, 1, 2, 3, 5, 8]
 4. Matrix Transpose: Convert rows into columns using list comprehension.
 matrix = [[1, 2], [3, 4], [5, 6]]
 transpose = [[row[i] for row in matrix] for i in range(len(matrix[0]))]
-# Result: [[1, 3, 5], [2, 4, 6]]
+Result: [[1, 3, 5], [2, 4, 6]]
 
 5. List Flattening: Convert a nested list into a single-level list.
 def flatten(nested):
