@@ -1,0 +1,18 @@
+Core Python Fundamentals
+
+1. Getting Started: Covers the introduction to Python, installation, setting up the environment, and running your first program.
+2. Python Basics: Introduces fundamental concepts such as variables, statements, expressions, and user input.
+3. Data Types: Details built-in data types, including integers, floats, strings, and booleans, and how to use arithmetic and comparison operators.
+4. Data Structures: Explains compound types such as:
+4.1. Lists and Tuples (ordered sequences).
+4.2. Dictionaries and Sets (key-value pairs and unordered collections).
+5. Control Flow: Focuses on decision-making using if, elif, and else statements, and repetitive tasks using for and while loops.
+6. Functions: Covers defining and calling functions, scope, arguments, and return values, which helps in organizing code.
+7. Modules and Packages: Teaches how to use and import standard and external libraries to extend Python's functionality. 
+
+Intermediate and Advanced Topics
+
+1. File Handling: Explains how to read from and write to various file types (text, CSV, JSON, etc.).
+2. Error and Exception Handling: Teaches how to manage syntax errors, runtime errors, and unexpected inputs gracefully using try/except blocks.
+3. Object-Oriented Programming (OOP): Introduces concepts like classes, objects, methods, attributes, and inheritance.
+4. Regular Expressions: Covers powerful techniques for pattern matching and text manipulation.
