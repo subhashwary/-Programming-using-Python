@@ -40,11 +40,33 @@ https://docs.python.org/3/tutorial/index.html
 # Initialize variables
 num1 = 5
 num2 = 10
-
 print(f"Before swap: num1 = {num1}, num2 = {num2}")
-
 # Swap using tuple unpacking
 num1, num2 = num2, num1
-
 print(f"After swap: num1 = {num1}, num2 = {num2}")
+
+a = 5
+b = 10
+# Swapping using tuple unpacking
+a, b = b, a
+print(f"a: {a}, b: {b}")  # Output: a: 10, b: 5
+
+a = 5
+b = 10
+# Swapping using a temporary variable
+temp = a
+a = b
+b = temp
+
+a = 5
+b = 10
+a = a + b  # a becomes 15
+b = a - b  # b becomes 5 (original a)
+a = a - b  # a becomes 10 (original b)
+
+a = 5  # Binary: 0101
+b = 10 # Binary: 1010
+a = a ^ b
+b = a ^ b
+a = a ^ b
 
