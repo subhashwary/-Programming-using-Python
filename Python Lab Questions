@@ -34,3 +34,17 @@ Introduction to Python Programming by Gowrishankar S and Veena A
 Online Materials:
 https://www.kaggle.com/learn/python
 https://docs.python.org/3/tutorial/index.html
+
+
+#[Swap of two numbers]
+# Initialize variables
+num1 = 5
+num2 = 10
+
+print(f"Before swap: num1 = {num1}, num2 = {num2}")
+
+# Swap using tuple unpacking
+num1, num2 = num2, num1
+
+print(f"After swap: num1 = {num1}, num2 = {num2}")
+
