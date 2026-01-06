@@ -158,3 +158,46 @@ print(f"Annual Interest Rate: {interest_rate}%")
 print(f"Time Period: {time_years} years\n")
 print(f"Simple Interest (SI): ${format_currency(si)}")
 print(f"Compound Interest (CI): ${format_currency(ci)}")
+
+#Find the GCD and LCM of two numbers
+import math
+def calculate_gcd_lcm(a, b):
+    # Calculate GCD (Greatest Common Divisor)
+    gcd_value = math.gcd(a, b)
+    # Calculate LCM (Least Common Multiple)
+    # The formula is: LCM(a, b) = (a * b) / GCD(a, b)
+    lcm_value = abs(a*b) // math.gcd(a, b)
+    return gcd_value, lcm_value
+# Example usage
+num1 = 56
+num2 = 98
+gcd, lcm = calculate_gcd_lcm(num1, num2)
+print(f"The GCD of {num1} and {num2} is: {gcd}")
+print(f"The LCM of {num1} and {num2} is: {lcm}")
+#Output:
+#The GCD of 56 and 98 is: 14
+#The LCM of 56 and 98 is: 392
+
+#Manually calculating GCD using the Euclidean Algorithm
+def find_gcd(a, b):
+    # Euclidean algorithm
+    while b:
+        a, b = b, a % b
+    return a
+
+def calculate_lcm_manual(a, b):
+    # Formula: LCM(a, b) = (a * b) / GCD(a, b)
+    # Use floor division (//) for integer results
+    lcm = abs(a*b) // find_gcd(a, b)
+    return lcm
+
+# Example usage
+num1 = 12
+num2 = 18
+gcd = find_gcd(num1, num2)
+lcm = calculate_lcm_manual(num1, num2)
+print(f"The GCD of {num1} and {num2} is: {gcd}")
+print(f"The LCM of {num1} and {num2} is: {lcm}")
+#Output:
+#The GCD of 12 and 18 is: 6
+#The LCM of 12 and 18 is: 36
