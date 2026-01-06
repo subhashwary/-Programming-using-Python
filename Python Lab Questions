@@ -106,3 +106,18 @@ c = 21
 result = find_largest_conditional(a, b, c)
 print(f"The largest number is: {result}")
 # Output: The largest number is: 45
+
+#Using a List and sort()
+def find_largest_sort(num1, num2, num3):
+  """Finds the largest of three numbers by sorting a list."""
+  numbers = [num1, num2, num3]
+  numbers.sort()
+  largest = numbers[-1] # The last element is the largest after sorting
+  return largest
+# Example usage
+a = 10
+b = 45
+c = 21
+result = find_largest_sort(a, b, c)
+print(f"The largest number is: {result}")
+# Output: The largest number is: 45
