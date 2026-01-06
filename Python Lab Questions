@@ -201,3 +201,43 @@ print(f"The LCM of {num1} and {num2} is: {lcm}")
 #Output:
 #The GCD of 12 and 18 is: 6
 #The LCM of 12 and 18 is: 36
+
+#Computes the roots of a quadratic function.
+import math
+def calculate_quadratic_roots(a, b, c):
+    """
+    Calculates the roots of a quadratic function ax^2 + bx + c = 0.
+    """
+    if a == 0:
+        if b == 0:
+            return "No solution (a and b cannot both be zero)."
+        else:
+            # Linear equation bx + c = 0
+            return f"Linear equation, single root: x = {-c / b}"
+    # Calculate the discriminant
+    delta = b**2 - 4*a*c
+    if delta > 0:
+        # Two distinct real roots
+        x1 = (-b + math.sqrt(delta)) / (2*a)
+        x2 = (-b - math.sqrt(delta)) / (2*a)
+        return f"Two distinct real roots: x1 = {x1}, x2 = {x2}"
+    elif delta == 0:
+        # One real root (or two equal roots)
+        x = -b / (2*a)
+        return f"One real root: x = {x}"
+    else:
+        # Two complex roots
+        real_part = -b / (2*a)
+        imaginary_part = math.sqrt(abs(delta)) / (2*a)
+        return f"Two complex roots: x1 = {real_part} + {imaginary_part}i, x2 = {real_part} - {imaginary_part}i"
+# Main part of the script for user input
+if __name__ == "__main__":
+    print("Enter the coefficients for ax^2 + bx + c = 0")
+    try:
+        a = float(input("Enter a: "))
+        b = float(input("Enter b: "))
+        c = float(input("Enter c: "))
+        result = calculate_quadratic_roots(a, b, c)
+        print(f"\nResult: {result}")
+    except ValueError:
+        print("Invalid input. Please enter numerical values for the coefficients.")
