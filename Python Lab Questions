@@ -121,3 +121,40 @@ c = 21
 result = find_largest_sort(a, b, c)
 print(f"The largest number is: {result}")
 # Output: The largest number is: 45
+
+#Given the principal amount, rate of interest, and number of years, calculate both simple interest and compound interest.
+def calculate_simple_interest(principal, rate, years):
+    """
+    Calculates the Simple Interest (SI).
+    Formula: SI = (P * R * T) / 100
+    """
+    simple_interest = (principal * rate * years) / 100
+    return simple_interest
+def calculate_compound_interest(principal, rate, years):
+    """
+    Calculates the Compound Interest (CI) and total amount.
+    Formula for total amount: A = P * (1 + R/100)^T
+    Formula for CI: CI = A - P
+    """
+    # Calculate the total amount using the compound interest formula
+    amount = principal * (pow((1 + rate / 100), years))
+    # Calculate the compound interest (Total Amount - Principal)
+    compound_interest = amount - principal
+    return compound_interest
+def format_currency(amount):
+    """Formats the amount to two decimal places."""
+    return f"{amount:,.2f}"
+# --- Example Usage ---
+# Define the inputs
+principal_amount = 10000  # P
+interest_rate = 5        # R (as a percentage)
+time_years = 3           # T
+# Calculate the interests
+si = calculate_simple_interest(principal_amount, interest_rate, time_years)
+ci = calculate_compound_interest(principal_amount, interest_rate, time_years)
+# Print the results
+print(f"Principal Amount: ${format_currency(principal_amount)}")
+print(f"Annual Interest Rate: {interest_rate}%")
+print(f"Time Period: {time_years} years\n")
+print(f"Simple Interest (SI): ${format_currency(si)}")
+print(f"Compound Interest (CI): ${format_currency(ci)}")
