@@ -89,3 +89,20 @@ result = find_largest_max(a, b, c)
 print(f"The largest number is: {result}")
 # Output: The largest number is: 45
 
+#Using if-elif-else Statements
+def find_largest_conditional(num1, num2, num3):
+  """Finds the largest of three numbers using if-elif-else statements."""
+  if (num1 >= num2) and (num1 >= num3):
+    largest = num1
+  elif (num2 >= num1) and (num2 >= num3):
+    largest = num2
+  else:
+    largest = num3
+  return largest
+# Example usage
+a = 10
+b = 45
+c = 21
+result = find_largest_conditional(a, b, c)
+print(f"The largest number is: {result}")
+# Output: The largest number is: 45
