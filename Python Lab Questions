@@ -241,3 +241,53 @@ if __name__ == "__main__":
         print(f"\nResult: {result}")
     except ValueError:
         print("Invalid input. Please enter numerical values for the coefficients.")
+
+#Write a program to find the factorial of the given number (n! = n*n-1*n-2* … * 2* 1)
+#Using a for loop (iterative method)
+def factorial_iterative(n):
+    """Calculates the factorial of a non-negative integer using a loop."""
+    if n < 0:
+        return "Factorial is not defined for negative numbers"
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        result = 1
+        for i in range(1, n + 1):
+            result *= i
+        return result
+# Example usage:
+number = 5
+print(f"The factorial of {number} is: {factorial_iterative(number)}")
+number = 0
+print(f"The factorial of {number} is: {factorial_iterative(number)}")
+#Output:
+#The factorial of 5 is: 120
+#The factorial of 0 is: 1
+
+#Using recursion
+def factorial_recursive(n):
+    """Calculates the factorial of a non-negative integer using recursion."""
+    if n < 0:
+        return "Factorial is not defined for negative numbers"
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial_recursive(n - 1)
+# Example usage:
+number = 6
+print(f"The factorial of {number} is: {factorial_recursive(number)}")
+#The factorial of 6 is: 720
+
+#Using the math module (built-in function) 
+import math
+def factorial_builtin(n):
+    """Calculates the factorial of a non-negative integer using the math module."""
+    if n < 0:
+        return "Factorial is not defined for negative numbers"
+    else:
+        return math.factorial(n)
+# Example usage:
+number = 7
+print(f"The factorial of {number} is: {factorial_builtin(number)}")
+#Output:
+#The factorial of 7 is: 5040
