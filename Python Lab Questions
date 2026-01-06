@@ -76,6 +76,7 @@ b = a ^ b
 a = a ^ b
 
 #Find the largest of three numbers
+#Using the max() Function
 def find_largest_max(num1, num2, num3):
   """Finds the largest of three numbers using the max() function."""
   largest = max(num1, num2, num3)
@@ -87,3 +88,4 @@ c = 21
 result = find_largest_max(a, b, c)
 print(f"The largest number is: {result}")
 # Output: The largest number is: 45
+
