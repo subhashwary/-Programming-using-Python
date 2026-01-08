@@ -1,3 +1,4 @@
+Basic Syntax and Variables
 
 #1. The program to display text.
 print("Hello, World!")
@@ -12,6 +13,7 @@ power = 2 ** 3  # Exponentiation (8)
 div = 17 // 3   # Floor division (5)
 
 Control Flow
+
 #4. If-Else Statement: Executing code based on conditions.
 age = 20
 if age >= 18:
