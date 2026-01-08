@@ -13,3 +13,8 @@ div = 17 // 3   # Floor division (5)
 
 Control Flow
 #4. If-Else Statement: Executing code based on conditions.
+age = 20
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
