@@ -20,3 +20,5 @@ else:
     print("Minor")
 
 #5. For Loop: Iterating over a sequence.
+for i in range(1, 6):
+    print(f"Number {i}")
