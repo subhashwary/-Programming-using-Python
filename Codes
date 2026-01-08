@@ -7,3 +7,6 @@ name = input("What is your name? ")
 print(f"Hi, {name}!")
 
 #3. Arithmetic: Basic math operations.
+sum = 5 + 10    # Addition
+power = 2 ** 3  # Exponentiation (8)
+div = 17 // 3   # Floor division (5)
