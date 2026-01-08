@@ -18,3 +18,5 @@ if age >= 18:
     print("Adult")
 else:
     print("Minor")
+
+#5. For Loop: Iterating over a sequence.
