@@ -1,3 +1,5 @@
 
 #1. The program to display text.
 print("Hello, World!")
+
+#2. User Input: Capturing data from a user.
