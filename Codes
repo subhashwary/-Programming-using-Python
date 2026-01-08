@@ -24,3 +24,11 @@ else:
 #5. For Loop: Iterating over a sequence.
 for i in range(1, 6):
     print(f"Number {i}")
+
+Data Structures
+
+#6. Lists: Ordered, mutable collections.
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")
+print(fruits[0]) # Output: apple
+
