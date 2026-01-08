@@ -5,3 +5,5 @@ print("Hello, World!")
 #2. User Input: Capturing data from a user.
 name = input("What is your name? ")
 print(f"Hi, {name}!")
+
+#3. Arithmetic: Basic math operations.
