@@ -129,6 +129,8 @@ print(x)
 print(y)
 print(z)
 
+a = "Hello, World!"
+print(a[1])
 
 
 
