@@ -42,3 +42,5 @@ def flatten(nested):
         else:
             flat.append(item)
     return flat
+
+6. return functions 
