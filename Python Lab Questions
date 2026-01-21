@@ -295,3 +295,5 @@ print(f"The factorial of {number} is: {factorial_builtin(number)}")
 this is a practical set of questions...
 
 more on its way coming up.
+
+the questions are taken up from CITK syllabus 
