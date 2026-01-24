@@ -43,7 +43,7 @@ def greet(name):
     return f"Hello, {name}!"
 print(greet("Alice"))
 
-#9. Importing Libraries: Use the Python Package Index (PyPI) to find additional libraries.
+9. Importing Libraries: Use the Python Package Index (PyPI) to find additional libraries.
 import math
 print(math.sqrt(16)) # Output: 4.0
 
@@ -131,7 +131,4 @@ print(z)
 
 a = "Hello, World!"
 print(a[1])
-
-
-
 
